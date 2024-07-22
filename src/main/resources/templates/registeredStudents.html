@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Students List</title>
+    <style>
+        /* CSS for student list page */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        th, td {
+            padding: 12px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+        th {
+            background-color: lightseagreen;
+            color: white;
+        }
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+        .navbar {
+            width: 100%;
+            background-color: #28a745; /* Blue color */
+            padding: 10px;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            font-size: larger;
+        }
+    </style>
+</head>
+<body>
+<div class="navbar">
+    <p>Students List</p>
+</div>
+<table>
+    <thead>
+    <tr>
+        <!-- Information headings for table -->
+        <th>Student Id</th>
+        <th>Student Name</th>
+        <th>Age</th>
+        <th>Blood Group</th>
+        <th>Days Per Week</th>
+        <th>Parent Id</th>
+        <th>Gender</th>
+        <th>Student Standard/Class</th>
+    </tr>
+    </thead>
+    <tbody>
+    <!-- Iterate through each student to show their information -->
+    <tr th:each="student : ${students}">
+        <td th:text="${student.studentId}"></td>
+        <td th:text="${student.studentName}"></td>
+        <td th:text="${student.age}"></td>
+        <td th:text="${student.bloodGroup}"></td>
+        <td th:text="${student.daysPerWeek}"></td>
+        <td th:text="${student.user.id}"></td>
+        <td th:text="${student.gender}"></td>
+        <td th:text="${student.standard}"></td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>

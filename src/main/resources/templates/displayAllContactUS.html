@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>List of Contact Us Messages</title>
+    <!-- Add any required CSS or JS links here -->
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+
+        .navbar {
+            width: 100%;
+            background-color: #28a745; /* Blue color */
+            padding: 6px;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            font-size: larger;
+        }
+    </style>
+</head>
+<body>
+<div class="navbar">
+    <p> Contact Us Information List</p>
+</div>
+
+<!-- Table to display contact messages -->
+<table>
+    <thead>
+    <tr>
+        <th>Full Name</th>
+        <th>Email</th>
+        <th>Message</th>
+        <th>Phone</th>
+    </tr>
+    </thead>
+    <tbody>
+    <!-- Iterate over contactuslist and display each contact -->
+    <tr th:each="contact: ${contactMessages}">
+        <td th:text="${contact.fullname}">Full Name</td>
+        <td th:text="${contact.email}">Email</td>
+        <td th:text="${contact.message}">Message</td>
+        <td th:text="${contact.phone}">Phone</td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>

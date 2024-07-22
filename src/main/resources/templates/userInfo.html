@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Parent Information</title>
+    <link rel="stylesheet" th:href="@{/css/userinfo.css}" href="../static/css/userinfo.css">
+</head>
+<body>
+<div class="container">
+    <h1>Enter User Email</h1>
+
+    <!--    enter user email to get user infomation-->
+    <!--    iterating through user information to get complete user information-->
+    <form action="#" th:action="@{/userinfo}" method="post">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" th:value="${email}" required />
+        <button type="submit">Submit</button>
+    </form>
+    <div th:if="${error}" class="error">
+        <p th:text="${error}"></p>
+    </div>
+
+    <!--    gives complete parent and their child name-->
+    <h1>Parent(Your) Details</h1>
+    <div th:if="${user != null}" class="user-details">
+        <div class="info">
+            <p><strong>UserId/ParentId:</strong> <span th:text="${user.id}"></span></p>
+            <p><strong>Username:</strong> <span th:text="${user.userName}"></span></p>
+            <p><strong>Email:</strong> <span th:text="${user.email}"></span></p>
+            <p><strong>First Name:</strong> <span th:text="${user.firstName}"></span></p>
+            <p><strong>Last Name:</strong> <span th:text="${user.lastName}"></span></p>
+            <p><strong>Phone:</strong> <span th:text="${user.phone}"></span></p>
+        </div>
+        <div class="info">
+            <p><strong>Address:</strong> <span th:text="${user.address}"></span></p>
+            <p><strong>City:</strong> <span th:text="${user.city}"></span></p>
+            <p><strong>State:</strong> <span th:text="${user.state}"></span></p>
+            <p><strong>Country:</strong> <span th:text="${user.country}"></span></p>
+            <p><strong>ZIP:</strong> <span th:text="${user.zip}"></span></p>
+        </div>
+        <div th:if="${user.students != null && !user.students.isEmpty()}" class="info">
+            <h2> your Child/Children's Info</h2>
+            <ul>
+                <li th:each="student : ${user.students}">
+                    <span th:text="${student.studentName}"></span>
+                </li>
+            </ul>
+        </div>
+        <div th:if="${user.roles != null && !user.roles.isEmpty()}" class="info">
+            <h2>your Role</h2>
+            <ul>
+                <li th:each="role : ${user.roles}">
+                    <span th:text="${role.name}"></span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+</html>

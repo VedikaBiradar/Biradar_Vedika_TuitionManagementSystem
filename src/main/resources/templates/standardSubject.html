@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Standard Subject Form</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        .form-group button {
+            padding: 10px 15px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .form-group button:hover {
+            background-color: #45a049;
+        }
+        .message {
+            color: green;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+<h1>Standard Subject Form</h1>
+
+<!--form to add new standard and subject information-->
+<form action="#" th:action="@{/standardSubject}" th:object="${standardSubject}" method="post">
+    <div class="form-group">
+        <label for="standard">Standard:</label>
+        <input type="text" id="standard" th:field="*{standard}" placeholder="Enter standard"/>
+    </div>
+    <div class="form-group">
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" th:field="*{subject}" placeholder="Enter subject"/>
+    </div>
+    <div class="form-group">
+        <button type="submit">Submit</button>
+    </div>
+</form>
+<p class="message" th:if="${param.success}">Standard Subject saved successfully!</p>
+</body>
+</html>

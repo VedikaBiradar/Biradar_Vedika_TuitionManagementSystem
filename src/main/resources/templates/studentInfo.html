@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Parent Information</title>
+    <link rel="stylesheet" th:href="@{/css/studentInfo.css}" href="../static/css/studentInfo.css">
+</head>
+<body>
+<div class="container">
+    <h1>Enter Parent Email</h1>
+    <form action="#" th:action="@{/studentInfo}" method="post">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" th:value="${email}" required />
+        <button type="submit">Submit</button>
+    </form>
+    <!--    <div th:if="${error}" class="error">-->
+    <!--        <p th:text="${error}"></p>-->
+    <!--    </div>-->
+    <div th:if="${student != null && !student.isEmpty()}" class="user-details">
+        <h1>Your Student/Children Information</h1>
+        <div class="table-container">
+            <table>
+                <thead>
+                <tr>
+                    <!--                    table column headings-->
+                    <th>Student Name</th>
+                    <th>Date of Birth</th>
+                    <th>Age</th>
+                    <th>BloodGroup</th>
+                    <th>daysPerWeek</th>
+                    <th>Gender</th>
+                    <th>Standard</th>
+                </tr>
+                </thead>
+                <tbody>
+
+                <!-- iterate through student and show there information-->
+                <tr th:each="student : ${student}">
+                    <td th:text="${student.studentName}"></td>
+                    <td th:text="${student.dob}"></td>
+                    <td th:text="${student.age}"></td>
+                    <td th:text="${student.bloodGroup}"></td>
+                    <td th:text="${student.daysPerWeek}"></td>
+                    <td th:text="${student.gender}"></td>
+                    <td th:text="${student.standard}"></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div th:if="${student == null || student.isEmpty()}" class="error">
+        <p class="error">No students found for the provided parent email.</p>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,534 @@
+
+/* General body styles for entire body : font-family, margin, paddding*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styles for all header elements: set background color, add padding, align text */
+header {
+    background-color: #4CAF50;
+    padding: 0.2rem;
+    text-align: left;
+}
+
+/* Navigation styles: removing defaullt list style */
+nav ul {
+    list-style-type: none;
+}
+
+/* Navigation list item styles: set display items inline, set margin right to list items */
+nav ul li {
+    display: inline;
+    margin-right: 1em;
+}
+
+/* Navigation link styles: Set link color to white, Remove underline from link */
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Main content styles : added padding to main*/
+main {
+    padding: 2em;
+}
+
+/* Footer styles: Set background color for footer,Set text color to black,
+Center align text ,Set width to 100% ,  Position footer at the bottom */
+footer {
+    background-color: lightgreen;
+    color: black;
+    text-align: center;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Form container styles */
+form {
+    display: flex; /* Use flexbox layout for form */
+    flex-direction: column; /* Arrange form elements in a column */
+}
+
+/* Form label styles */
+form label {
+    margin-top: 1em; /* Add top margin to labels */
+}
+
+/* Form input and textarea styles */
+form input, form textarea {
+    padding: 0.5em; /* Add padding to inputs and textareas */
+    margin-top: 0.5em; /* Add top margin to inputs and textareas */
+}
+
+/* Table styles */
+table {
+    width: 100%; /* Set table width to 100% */
+    border-collapse: collapse; /* Collapse table borders */
+    margin-top: 1em; /* Add top margin to table */
+    font-family: Georgia; /* Set font family for table */
+}
+
+/* Table border styles */
+table, th, td {
+    border: 1px solid black; /* Add border to table, headers, and cells */
+}
+
+/* Table header and cell styles:Add padding to headers and cells,Align text to the left */
+th, td {
+    padding: 0.5em;
+    text-align: left;
+}
+
+/* Row hover effect for table */
+tr:hover {
+    background-color: lightblue;
+}
+
+/* Login form styles: Use flexbox layout for login form, Arrange form elements in a column */
+.loginForm {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Logo positioning:Position logo absolutely, set top right margin and width height */
+#logo {
+    position: absolute;
+    top: 67px;
+    right: 20px;
+    width: 200px;
+    height: 135px;
+}
+
+/* Home logo container styles:Use flexbox layout for home logo container,
+Arrange elements in a row, Set container height
+ */
+.home-logo {
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+}
+
+/* Name section styles: using flex, and direction */
+.name {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Contact us styles : using italic and weight as lighter*/
+.conact-us {
+    font-style: italic;
+    font-weight: lighter;
+}
+
+/* Contact us heading styles: setting color and top margin */
+.conatct-us-heading {
+    color: darkgreen;
+    margin-top: 5px;
+}
+
+/* Contact text styles: set font size, family and color of text */
+.contact-text {
+    font-size: larger;
+    font-family: "Palatino Linotype";
+    color: black;
+}
+
+/* Box text styles: border*/
+.box-text {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px blue;
+}
+
+/* Contact form styles: align at centre */
+#contact-form {
+    text-align: center;
+}
+
+/* Box image container styles: adding flex, padding, adding margin left, margin right */
+.box-image {
+    display: flex;
+    padding: 10px;
+    align-items: normal;
+    gap: 15px;
+    margin-left: auto;
+    margin-right: 10px;
+}
+
+/* Building photo styles : set width, height and radius for corner and shadow for box */
+#building-photo {
+    max-width: 500px;
+    height: 400px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact form container styles: use flex layout, width, height and direction */
+#contact-form {
+    display: flex;
+    height: 400px;
+    width: 360px;
+    flex-direction: column;
+}
+
+/* Map styles of contact us page: set height, width, border related things*/
+.map {
+    height: 200px;
+    width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px blue;
+    margin-left: 50px;
+}
+
+/* About page styles: used flex layout, direction row and gap between images is 35px */
+.about-images {
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+}
+
+/* About image styles: set image height and width */
+.about-img {
+    height: 180px;
+    width: 250px;
+}
+
+/* About heading styles: set font color, size, family and text align at centre */
+#about-heading {
+    text-align: center;
+    color: darkgreen;
+    font-size: larger;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* About body styles: set font family and background color */
+.about-body {
+    font-family: Arial, sans-serif;
+    background-color: lightcyan;
+}
+
+/* 3 building sentence styles of about us page : using flex in row direction, set color, font*/
+.some-sent {
+    display: flex;
+    flex-direction: row;
+    gap: 150px;
+    text-align: center;
+    color: darkorange;
+    font-style: italic;
+    font-weight: bold;
+}
+
+/* About paragraph styles: Add left margin, Add right margin,  Set background color,
+ Set font family,Use italic font style, Set text color to dark red, Use bold font weight */
+.about-para {
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 0.3rem;
+    background-color: lightcyan;
+    font-family: Calibri;
+    font-style: italic;
+    color: darkred;
+    font-weight: bold;
+}
+
+/* Last about paragraph styles:Set font family,Use flexbox layout, Arrange elements in a row
+ Add gap between elements,Add left padding, Remove bottom padding,
+  Set text color to dark red, Set font family*/
+.about-para-last {
+
+    display: flex;
+    flex-direction: row;
+    gap: 0.3rem;
+    padding-left: 0.2rem;
+    margin-top: 2px;
+    padding-bottom: 0;
+    color: darkred;
+    font-family: Bahnschrift;
+}
+
+/* About heading styles: Set heading color to dark orange,
+ Increase font size, Set font family*/
+.about-heading {
+    color: darkorange;
+    font-size: larger;
+    font-family: Calibri;
+}
+
+/* Values section styles:Set font family  */
+.values {
+    font-family: "Calibri Light";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* General body styles for entire body : font-family, margin, paddding*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styles for all header elements: set background color, add padding, align text */
+header {
+    background-color: #4CAF50;
+    padding: 0.2rem;
+    text-align: left;
+}
+
+/* Navigation styles: removing defaullt list style */
+nav ul {
+    list-style-type: none;
+}
+
+/* Navigation list item styles: set display items inline, set margin right to list items */
+nav ul li {
+    display: inline;
+    margin-right: 1em;
+}
+
+/* Navigation link styles: Set link color to white, Remove underline from link */
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Main content styles : added padding to main*/
+main {
+    padding: 2em;
+}
+
+/* Footer styles: Set background color for footer,Set text color to black,
+Center align text ,Set width to 100% ,  Position footer at the bottom */
+footer {
+    background-color: lightgreen;
+    color: black;
+    text-align: center;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Form container styles */
+form {
+    display: flex; /* Use flexbox layout for form */
+    flex-direction: column; /* Arrange form elements in a column */
+}
+
+/* Form label styles */
+form label {
+    margin-top: 1em; /* Add top margin to labels */
+}
+
+/* Form input and textarea styles */
+form input, form textarea {
+    padding: 0.5em; /* Add padding to inputs and textareas */
+    margin-top: 0.5em; /* Add top margin to inputs and textareas */
+}
+
+/* Table styles */
+table {
+    width: 100%; /* Set table width to 100% */
+    border-collapse: collapse; /* Collapse table borders */
+    margin-top: 1em; /* Add top margin to table */
+    font-family: Georgia; /* Set font family for table */
+}
+
+/* Table border styles */
+table, th, td {
+    border: 1px solid black; /* Add border to table, headers, and cells */
+}
+
+/* Table header and cell styles:Add padding to headers and cells,Align text to the left */
+th, td {
+    padding: 0.5em;
+    text-align: left;
+}
+
+/* Row hover effect for table */
+tr:hover {
+    background-color: lightblue;
+}
+
+/* Login form styles: Use flexbox layout for login form, Arrange form elements in a column */
+.loginForm {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Logo positioning:Position logo absolutely, set top right margin and width height */
+#logo {
+    position: absolute;
+    top: 67px;
+    right: 20px;
+    width: 200px;
+    height: 135px;
+}
+
+/* Home logo container styles:Use flexbox layout for home logo container,
+Arrange elements in a row, Set container height
+ */
+.home-logo {
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+}
+
+/* Name section styles: using flex, and direction */
+.name {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Contact us styles : using italic and weight as lighter*/
+.conact-us {
+    font-style: italic;
+    font-weight: lighter;
+}
+
+/* Contact us heading styles: setting color and top margin */
+.conatct-us-heading {
+    color: darkgreen;
+    margin-top: 5px;
+}
+
+/* Contact text styles: set font size, family and color of text */
+.contact-text {
+    font-size: larger;
+    font-family: "Palatino Linotype";
+    color: black;
+}
+
+/* Box text styles: border*/
+.box-text {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px blue;
+}
+
+/* Contact form styles: align at centre */
+#contact-form {
+    text-align: center;
+}
+
+/* Box image container styles: adding flex, padding, adding margin left, margin right */
+.box-image {
+    display: flex;
+    padding: 10px;
+    align-items: normal;
+    gap: 15px;
+    margin-left: auto;
+    margin-right: 10px;
+}
+
+/* Building photo styles : set width, height and radius for corner and shadow for box */
+#building-photo {
+    max-width: 500px;
+    height: 400px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact form container styles: use flex layout, width, height and direction */
+#contact-form {
+    display: flex;
+    height: 400px;
+    width: 360px;
+    flex-direction: column;
+}
+
+/* Map styles of contact us page: set height, width, border related things*/
+.map {
+    height: 200px;
+    width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px blue;
+    margin-left: 50px;
+}
+
+/* About page styles: used flex layout, direction row and gap between images is 35px */
+.about-images {
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+}
+
+/* About image styles: set image height and width */
+.about-img {
+    height: 180px;
+    width: 250px;
+}
+
+/* About heading styles: set font color, size, family and text align at centre */
+#about-heading {
+    text-align: center;
+    color: darkgreen;
+    font-size: larger;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* About body styles: set font family and background color */
+.about-body {
+    font-family: Arial, sans-serif;
+    background-color: lightcyan;
+}
+
+/* 3 building sentence styles of about us page : using flex in row direction, set color, font*/
+.some-sent {
+    display: flex;
+    flex-direction: row;
+    gap: 150px;
+    text-align: center;
+    color: darkorange;
+    font-style: italic;
+    font-weight: bold;
+}
+
+/* About paragraph styles: Add left margin, Add right margin,  Set background color,
+ Set font family,Use italic font style, Set text color to dark red, Use bold font weight */
+.about-para {
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 0.3rem;
+    background-color: lightcyan;
+    font-family: Calibri;
+    font-style: italic;
+    color: darkred;
+    font-weight: bold;
+}
+
+/* Last about paragraph styles:Set font family,Use flexbox layout, Arrange elements in a row
+ Add gap between elements,Add left padding, Remove bottom padding,
+  Set text color to dark red, Set font family*/
+.about-para-last {
+
+    display: flex;
+    flex-direction: row;
+    gap: 0.3rem;
+    padding-left: 0.2rem;
+    margin-top: 2px;
+    padding-bottom: 0;
+    color: darkred;
+    font-family: Bahnschrift;
+}
+
+/* About heading styles: Set heading color to dark orange,
+ Increase font size, Set font family*/
+.about-heading {
+    color: darkorange;
+    font-size: larger;
+    font-family: Calibri;
+}
+
+/* Values section styles:Set font family  */
+.values {
+    font-family: "Calibri Light";
+}
+

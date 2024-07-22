@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Saroja Tuition Centre</title>
+
+    <!-- Link to external CSS file for styling -->
+    <link rel="stylesheet" href="../static/css/mycss.css" th:href="@{/css/mycss.css}">
+
+    <!-- Script tag to external JS file-->
+    <script th:src="@{/JS/myjavascript.js}"  src="../static/JS/myjavascript.js"defer></script>
+
+    <!-- Script tag for Google web font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* Center the section and form, and style the elements */
+        section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+        }
+
+        h2 {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+
+        form#newsletter-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+        }
+
+
+
+        form#newsletter-form input[type="email"] {
+            width: 200px; /* Smaller size for the input box */
+            padding: 5px; /* Smaller padding */
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        form#newsletter-form button#id-subscribe {
+            padding: 5px 10px; /* Smaller size for the button */
+            border: none;
+            border-radius: 3px;
+            background-color: #007BFF;
+            color: white;
+            cursor: pointer;
+        }
+
+        form#newsletter-form button#id-subscribe:hover {
+            background-color: #0056b3;
+        }
+
+        #check{
+            padding: 20px;
+            margin-left: 80px;
+            display: flex;
+            flex-direction: row;
+            gap: 170px;
+        }
+
+    </style>
+</head>
+<body>
+<header>
+    <!-- Navigation menu -->
+    <nav>
+        <ul>
+            <li><a th:href="@{/index}">Home</a></li>
+            <li><a th:href="@{/about}">About Us</a></li>
+            <li><a th:href="@{/contact}">Contact Us</a></li>
+            <li><a th:href="@{/userRegistration}">Registration</a></li>
+            <li><a th:href="@{/login}">Login</a></li>
+            <li><a th:href="@{/studentRegister}">Register Student</a></li>
+
+        </ul>
+    </nav>
+</header>
+
+<!-- Main content section -->
+<main>
+    <!-- Logo and heading -->
+    <div class="home-logo">
+        <div class="name">
+            <h1 style="font-style: italic; color: darkgreen">Welcome to Saroja Tuition Centre</h1>
+            <pre style="color: darkorange; font-style: italic; font-weight: bold">Your success is our mission.<br>Our mission is to create a supportive learning environment<br>where academic success and personal growth go hand in hand.</pre>
+        </div>
+        <!-- Logo image -->
+        <img id="logo" th:src="@{/images/logo.png}" src="../static/images/logo.png"alt="Logo Image">
+    </div>
+</main>
+
+<!-- Paragraph with a welcoming message and academic support details -->
+<p style="margin-left: 20px; margin-right: 20px; padding: 10px; text-align: justify; background-color: #f9f9f9; border-radius: 8px; font-family: 'Palatino Linotype'; color: darkred;">
+    Welcome to Saroja Tuition Centre! We are delighted to have you here.
+    At Saroja Tuition Centre, we believe that every student has the potential to
+    excel academically and personally. Our dedicated team of experienced educators
+    is committed to providing personalized learning experiences that cater to the
+    unique needs of each student. Whether you're looking to improve your grades,
+    prepare for exams, or develop a deeper understanding of your subjects, we're here
+    to support you every step of the way. Join us at Saroja Tuition
+    Centre and embark on a journey towards academic success and lifelong learning.
+</p>
+
+<div id="check">
+
+    <!-- Center-aligned link to "Check Eligibility Fee & Subjects" -->
+    <p style="text-align: center;">
+        <a id="connecting-page" th:href="@{/calculate}" style="display: inline-block; padding: 10px 20px; border: 2px solid cornflowerblue; border-radius: 5px; text-decoration: none; color: black; background-color: lightyellow;">
+            <u>Check Eligibility Fee & Subjects</u>
+        </a>
+    </p>
+
+</div>
+
+<!-- Footer with contact information -->
+<footer>
+    <pre style="font-style: italic;">
+
+         &copy;2024 Saroja Tuition Centre.
+         Hanchinal Complex, Opp- Al-ameen, Vijayapur, Karnataka, 586108
+          Email : sarojatutioncentre@gmail.com
+
+         </pre>
+</footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<!DOCTYPE html>-->
+<!--<html lang="en"-->
+<!--      xmlns:th="http://www.thymeleaf.org"-->
+<!--&gt;-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Registration and Login System</title>-->
+<!--    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"-->
+<!--          rel="stylesheet"-->
+<!--          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"-->
+<!--          crossorigin="anonymous">-->
+<!--</head>-->
+<!--<body>-->
+<!--<nav class="navbar navbar-expand-lg navbar-dark bg-dark">-->
+<!--    <div class="container-fluid">-->
+<!--        <a class="navbar-brand" href="#">Registration and Login System</a>-->
+<!--        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">-->
+<!--            <span class="navbar-toggler-icon"></span>-->
+<!--        </button>-->
+<!--        <div class="collapse navbar-collapse" id="navbarSupportedContent">-->
+<!--            <ul class="navbar-nav me-auto mb-2 mb-lg-0">-->
+<!--                <li class="nav-item">-->
+<!--                    <a class="nav-link active" aria-current="page" th:href="@{/register}">Register</a>-->
+<!--                </li>-->
+<!--                <li class="nav-item">-->
+<!--                    <a class="nav-link active" aria-current="page" th:href="@{/login}">Login</a>-->
+<!--                </li>-->
+<!--            </ul>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</nav>-->
+<!--<div class="container">-->
+<!--    <div class="row">-->
+<!--        <h1 class="text-center"> Welcome to Registration and Login System </h1>-->
+<!--    </div>-->
+<!--</div>-->
+<!--</body>-->
+<!--</html>-->

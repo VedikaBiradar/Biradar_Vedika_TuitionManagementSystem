@@ -1,0 +1,625 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+<!--    <title>Saroja Tuition Centre - Contact</title>-->
+
+<!--    &lt;!&ndash; External JavaScript file for additional functionality &ndash;&gt;-->
+<!--    <script type="text/javascript" src="../static/JS/myjavascript.js"></script>-->
+
+<!--    &lt;!&ndash; External CSS file for styling &ndash;&gt;-->
+<!--    <link rel="stylesheet" href="../static/CSS/mycss.css">-->
+
+<!--    &lt;!&ndash;Script tag for Google web font&ndash;&gt;-->
+<!--    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">-->
+
+
+<!--    <style>-->
+<!--        /* Internal CSS styles for specific page elements */-->
+
+<!--        /* General body styling */-->
+<!--        body {-->
+<!--            font-family: 'Roboto', sans-serif;-->
+<!--            margin: 0;-->
+<!--            padding: 0;-->
+<!--            background-color: lightcyan;-->
+<!--            color: #333;-->
+<!--        }-->
+
+<!--        /* Header styling */-->
+<!--        header {-->
+<!--            background-color: #4CAF50;-->
+<!--            color: white;-->
+<!--            padding: 10px 0;-->
+<!--            text-align: center;-->
+<!--        }-->
+
+<!--        /* Navigation menu styling */-->
+<!--        nav ul {-->
+<!--            list-style-type: none;-->
+<!--            margin: 0;-->
+<!--            padding: 0;-->
+<!--        }-->
+
+<!--        /* Navigation list item styling */-->
+<!--        nav ul li {-->
+<!--            display: inline;-->
+<!--            margin-right: 15px;-->
+<!--        }-->
+
+<!--        /* Navigation link styling */-->
+<!--        nav ul li a {-->
+<!--            color: white;-->
+<!--            text-decoration: none;-->
+<!--            font-weight: bold;-->
+<!--        }-->
+
+<!--        /* Navigation link hover effect */-->
+<!--        nav ul li a:hover {-->
+<!--            text-decoration: underline;-->
+<!--        }-->
+
+<!--        /* Main content styling */-->
+<!--        main {-->
+<!--            padding: 20px;-->
+<!--        }-->
+
+<!--        /* Contact text section styling */-->
+<!--        .contact-text {-->
+<!--            background-color: #fff;-->
+<!--            padding: 20px;-->
+<!--        }-->
+
+<!--        /* Contact us heading styling */-->
+<!--        .contact-us-heading {-->
+<!--            color: #4CAF50;-->
+<!--            text-align: center;-->
+<!--        }-->
+
+<!--        /* Contact us list styling */-->
+<!--        .contact-us {-->
+<!--            margin-left: 18px;-->
+<!--            padding: 0;-->
+<!--            font-style: italic;-->
+<!--        }-->
+
+<!--        /* Contact us list item styling */-->
+<!--        .contact-us li {-->
+<!--            margin-bottom: 10px;-->
+<!--        }-->
+
+<!--        /* Contact us link styling */-->
+<!--        .contact-us a {-->
+<!--            color: #4CAF50;-->
+<!--            text-decoration: none;-->
+<!--        }-->
+
+<!--        /* Contact us link hover effect */-->
+<!--        .contact-us a:hover {-->
+<!--            text-decoration: underline;-->
+<!--        }-->
+
+<!--        /* Label styling */-->
+<!--        label {-->
+<!--            margin-top: 10px;-->
+<!--            font-weight: bold;-->
+<!--            text-align: left;-->
+<!--            margin-left: 8px;-->
+<!--        }-->
+
+<!--        /* Input and textarea styling */-->
+<!--        input, textarea {-->
+<!--            padding: 10px;-->
+<!--            margin-top: 5px;-->
+<!--            border: 1px solid black;-->
+<!--            border-radius: 4px;-->
+<!--            width: 100%;-->
+<!--            box-sizing: border-box;-->
+<!--        }-->
+
+<!--        /* Button styling */-->
+<!--        button {-->
+<!--            margin-top: 15px;-->
+<!--            padding: 10px;-->
+<!--            border: none;-->
+<!--            border-radius: 4px;-->
+<!--            background-color: #4CAF50;-->
+<!--            color: white;-->
+<!--            font-size: 16px;-->
+<!--            cursor: pointer;-->
+<!--        }-->
+
+<!--        /* Button hover effect */-->
+<!--        button:hover {-->
+<!--            background-color: #45a049;-->
+<!--        }-->
+
+<!--        /* Form styling */-->
+<!--        form {-->
+<!--            margin: 0 20px;-->
+<!--        }-->
+<!--    </style>-->
+
+<!--</head>-->
+
+
+<!--<body>-->
+<!--<main class="conatct-form">-->
+
+<!--    &lt;!&ndash; Contact section &ndash;&gt;-->
+<!--    <section class="contact-text">-->
+<!--        <h2 class="contact-us-heading"><u>Contact Us</u></h2>-->
+
+<!--        &lt;!&ndash; Introduction text &ndash;&gt;-->
+<!--        <p style="font-size: medium; font-style: italic">We would love to hear from you! Please reach out to us through any of the following methods:</p>-->
+
+<!--        &lt;!&ndash; Contact details list &ndash;&gt;-->
+<!--        <ul class="contact-us">-->
+<!--            <li  style="font-family: Calibri;"><b>Email: </b><a style="color: blue; font-family: Calibri; " href="mailto:saroja.hanchinaltutioncentre@gmail.com">saroja.hanchinaltutioncentre@gmail.com</a></li>-->
+<!--            <li  style="font-family: Calibri;"><b>Phone: </b><a style="color: blue;font-family: Calibri; " href="tel:+91 9871237645">+91 9871237645</a></li>-->
+<!--            <li style="font-family: Calibri;" ><b>Address:</b> Hanchinal Complex, Opp- Al-ameen, Vijayapur, Karnataka-IN, 586108</li>-->
+<!--        </ul>-->
+<!--        <div class="box-image">-->
+<!--        <div class="box-text">-->
+
+<!--            &lt;!&ndash; Form section &ndash;&gt;-->
+<!--            <form id="contact-form">-->
+<!--            <h3 style="color:darkorange; text-align: center;">Get in Touch With Us</h3>-->
+
+<!--                &lt;!&ndash; Form inputs &ndash;&gt;-->
+<!--            <label for="name">Name:</label>-->
+<!--            <input type="text" id="name" name="name" required>-->
+
+<!--            <label for="email">Email:</label>-->
+<!--            <input type="email" id="email" name="email"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>-->
+
+<!--            <label for="message">Message:</label>-->
+<!--            <textarea id="message" name="message" required></textarea>-->
+
+<!--                &lt;!&ndash; Submit button &ndash;&gt;-->
+<!--            <button type="submit">Send Message</button>-->
+<!--        </form>-->
+<!--        </div>-->
+<!--            &lt;!&ndash; Building Image &ndash;&gt;-->
+<!--        <img id="building-photo" src="../static/images and videos/sarojabuildingphoto.png" alt="Building Photo">-->
+<!--        </div>-->
+<!--    </section>-->
+<!--</main>-->
+
+<!--&lt;!&ndash; Location map &ndash;&gt;-->
+<!--<h5 style="text-align: center; color: darkorange; font-style: italic" >Please Check Out Our Location: Saroja Tuition Centre </h5>-->
+<!--<iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3818.896063998546!2d75.7127948741966!3d16.831511518582676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc655a005c9ced9%3A0xe1b094b64fc124ef!2sHanchinal%20lokal!5e0!3m2!1sen!2sus!4v1719122634266!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen=""-->
+<!--        loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>-->
+
+<!--&lt;!&ndash; Footer with contact information&ndash;&gt;-->
+<!--<footer>-->
+<!--    <pre style="font-style: italic;">&copy;2024 Saroja Tuition Centre.-->
+<!--         Hanchinal Complex, Opp- Al-ameen, Vijayapur, Karanatka, 586108-->
+<!--         <a href="mailto:saroja.hanchinaltutioncentre@gmail.com">saroja.hanchinaltutioncentre@gmail.com </a>-->
+<!--    </pre>-->
+<!--</footer>-->
+<!--</body>-->
+<!--</html>-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<!DOCTYPE html>-->
+<!--<html lang="en" xmlns:th="http://www.thymeleaf.org">-->
+
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+<!--    <title>Saroja Tuition Centre - Contact</title>-->
+
+<!--    &lt;!&ndash; External JavaScript file for additional functionality &ndash;&gt;-->
+<!--    <script type="text/javascript" th:src="@{/static/JS/myjavascript.js}"></script>-->
+
+<!--    &lt;!&ndash; External CSS file for styling &ndash;&gt;-->
+<!--    <link rel="stylesheet" th:href="@{/static/CSS/mycss.css}">-->
+
+<!--    &lt;!&ndash;Script tag for Google web font&ndash;&gt;-->
+<!--    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">-->
+
+
+<!--    <style>-->
+<!--        /* Internal CSS styles for specific page elements */-->
+
+<!--        /* General body styling */-->
+<!--        body {-->
+<!--            font-family: 'Roboto', sans-serif;-->
+<!--            margin: 0;-->
+<!--            padding: 0;-->
+<!--            background-color: lightcyan;-->
+<!--            color: #333;-->
+<!--        }-->
+
+<!--        /* Header styling */-->
+<!--        header {-->
+<!--            background-color: #4CAF50;-->
+<!--            color: white;-->
+<!--            padding: 10px 0;-->
+<!--            text-align: center;-->
+<!--        }-->
+
+<!--        /* Navigation menu styling */-->
+<!--        nav ul {-->
+<!--            list-style-type: none;-->
+<!--            margin: 0;-->
+<!--            padding: 0;-->
+<!--        }-->
+
+<!--        /* Navigation list item styling */-->
+<!--        nav ul li {-->
+<!--            display: inline;-->
+<!--            margin-right: 15px;-->
+<!--        }-->
+
+<!--        /* Navigation link styling */-->
+<!--        nav ul li a {-->
+<!--            color: white;-->
+<!--            text-decoration: none;-->
+<!--            font-weight: bold;-->
+<!--        }-->
+
+<!--        /* Navigation link hover effect */-->
+<!--        nav ul li a:hover {-->
+<!--            text-decoration: underline;-->
+<!--        }-->
+
+<!--        /* Main content styling */-->
+<!--        main {-->
+<!--            padding: 20px;-->
+<!--        }-->
+
+<!--        /* Contact text section styling */-->
+<!--        .contact-text {-->
+<!--            background-color: #fff;-->
+<!--            padding: 20px;-->
+<!--        }-->
+
+<!--        /* Contact us heading styling */-->
+<!--        .contact-us-heading {-->
+<!--            color: #4CAF50;-->
+<!--            text-align: center;-->
+<!--        }-->
+
+<!--        /* Contact us list styling */-->
+<!--        .contact-us {-->
+<!--            margin-left: 18px;-->
+<!--            padding: 0;-->
+<!--            font-style: italic;-->
+<!--        }-->
+
+<!--        /* Contact us list item styling */-->
+<!--        .contact-us li {-->
+<!--            margin-bottom: 10px;-->
+<!--        }-->
+
+<!--        /* Contact us link styling */-->
+<!--        .contact-us a {-->
+<!--            color: #4CAF50;-->
+<!--            text-decoration: none;-->
+<!--        }-->
+
+<!--        /* Contact us link hover effect */-->
+<!--        .contact-us a:hover {-->
+<!--            text-decoration: underline;-->
+<!--        }-->
+
+<!--        /* Label styling */-->
+<!--        label {-->
+<!--            margin-top: 10px;-->
+<!--            font-weight: bold;-->
+<!--            text-align: left;-->
+<!--            margin-left: 8px;-->
+<!--        }-->
+
+<!--        /* Input and textarea styling */-->
+<!--        input, textarea {-->
+<!--            padding: 10px;-->
+<!--            margin-top: 5px;-->
+<!--            border: 1px solid black;-->
+<!--            border-radius: 4px;-->
+<!--            width: 100%;-->
+<!--            box-sizing: border-box;-->
+<!--        }-->
+
+<!--        /* Button styling */-->
+<!--        button {-->
+<!--            margin-top: 15px;-->
+<!--            padding: 10px;-->
+<!--            border: none;-->
+<!--            border-radius: 4px;-->
+<!--            background-color: #4CAF50;-->
+<!--            color: white;-->
+<!--            font-size: 16px;-->
+<!--            cursor: pointer;-->
+<!--        }-->
+
+<!--        /* Button hover effect */-->
+<!--        button:hover {-->
+<!--            background-color: #45a049;-->
+<!--        }-->
+
+<!--        /* Form styling */-->
+<!--        form {-->
+<!--            margin: 0 20px;-->
+<!--        }-->
+<!--    </style>-->
+
+<!--</head>-->
+
+<!--<body>-->
+<!--<main class="contact-form">-->
+<!--    &lt;!&ndash; Contact section &ndash;&gt;-->
+<!--    <section class="contact-text">-->
+<!--        <h2 class="contact-us-heading"><u>Contact Us</u></h2>-->
+
+<!--        &lt;!&ndash; Introduction text &ndash;&gt;-->
+<!--        <p style="font-size: medium; font-style: italic">We would love to hear from you! Please reach out to us through any of the following methods:</p>-->
+
+<!--        &lt;!&ndash; Contact details list &ndash;&gt;-->
+<!--        <ul class="contact-us">-->
+<!--            <li style="font-family: Calibri;"><b>Email: </b><a style="color: blue; font-family: Calibri;" href="mailto:saroja.hanchinaltutioncentre@gmail.com">saroja.hanchinaltutioncentre@gmail.com</a></li>-->
+<!--            <li style="font-family: Calibri;"><b>Phone: </b><a style="color: blue; font-family: Calibri;" href="tel:+91 9871237645">+91 9871237645</a></li>-->
+<!--            <li style="font-family: Calibri;"><b>Address:</b> Hanchinal Complex, Opp- Al-ameen, Vijayapur, Karnataka-IN, 586108</li>-->
+<!--        </ul>-->
+
+<!--        <div class="box-image">-->
+<!--            <div class="box-text">-->
+<!--                &lt;!&ndash; Form section &ndash;&gt;-->
+<!--                <form id="contact-form" th:action="@{/contact}" th:object="${contactMessage}" method="post">-->
+<!--                    <h3 style="color:darkorange; text-align: center;">Get in Touch With Us</h3>-->
+
+<!--                    &lt;!&ndash; Form inputs &ndash;&gt;-->
+<!--                    <label for="name">FullName:</label>-->
+<!--                    <input type="text" id="name" name="name" th:field="*{fullname}" required>-->
+
+<!--                    <label for="email">Email:</label>-->
+<!--                    <input type="email" id="email" name="email" th:field="*{email}" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>-->
+
+<!--                    <label for="message">Message:</label>-->
+<!--                    <textarea id="message" name="message" th:field="*{message}" required></textarea>-->
+
+<!--                    &lt;!&ndash; Submit button &ndash;&gt;-->
+<!--                    <button type="submit">Send Message</button>-->
+<!--                </form>-->
+<!--            </div>-->
+<!--            &lt;!&ndash; Building Image &ndash;&gt;-->
+<!--            <img id="building-photo" th:src="@{/static/images-and-videos/Saroja-Building-Photo.png}" alt="Building Photo">-->
+<!--        </div>-->
+<!--    </section>-->
+<!--</main>-->
+
+<!--&lt;!&ndash; Location map &ndash;&gt;-->
+<!--<h5 style="text-align: center; color: darkorange; font-style: italic">Please Check Out Our Location: Saroja Tuition Centre</h5>-->
+<!--<iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3818.896063998546!2d75.7127948741966!3d16.831511518582676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc655a005c9ced9%3A0xe1b094b64fc124ef!2sHanchinal%20lokal!5e0!3m2!1sen!2sus!4v1719122634266!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>-->
+
+<!--&lt;!&ndash; Footer with contact information&ndash;&gt;-->
+<!--<footer>-->
+<!--        <pre style="font-style: italic;">&copy;2024 Saroja Tuition Centre.-->
+<!--             Hanchinal Complex, Opp- Al-ameen, Vijayapur, Karanatka, 586108-->
+<!--             <a href="mailto:saroja.hanchinaltutioncentre@gmail.com">saroja.hanchinaltutioncentre@gmail.com </a>-->
+<!--        </pre>-->
+<!--</footer>-->
+<!--</body>-->
+
+<!--</html>-->
+
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saroja Tuition Centre - Contact</title>
+
+    <!-- External JavaScript file for additional functionality -->
+    <script type="text/javascript" th:src="@{../static/JS/myjavascript.js}"></script>
+
+    <!-- External CSS file for styling -->
+    <link rel="stylesheet" th:href="@{../static/css/mycss.css}">
+
+    <!-- Script tag for Google web font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* Internal CSS styles for specific page elements */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: lightcyan;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        main {
+            padding: 20px;
+        }
+        .contact-text {
+            background-color: #fff;
+            padding: 20px;
+        }
+        .contact-us-heading {
+            color: #4CAF50;
+            text-align: center;
+        }
+        .contact-us {
+            margin-left: 18px;
+            padding: 0;
+            font-style: italic;
+        }
+        .contact-us li {
+            margin-bottom: 10px;
+        }
+        .contact-us a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+        .contact-us a:hover {
+            text-decoration: underline;
+        }
+        label {
+            margin-top: 10px;
+            font-weight: bold;
+            text-align: left;
+            margin-left: 8px;
+        }
+        input, textarea {
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid black;
+            border-radius: 4px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        button {
+            margin-top: 15px;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            background-color: #4CAF50;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        form {
+            margin: 0 20px;
+        }
+
+        .box-text {
+            flex: 1; /* Takes up 50% of the available space */
+            max-width: 50%; /* Ensures it does not exceed 50% of the container width */
+        }
+
+        #building-photo {
+            flex: 1; /* Takes up 50% of the available space */
+            max-width: 50%; /* Ensures it does not exceed 50% of the container width */
+            height: auto; /* Maintains aspect ratio */
+            max-height: 400px; /* Optional: Control maximum height if needed */
+            object-fit: cover; /* Optional: Ensure the image covers the area */
+        }
+        /* Flexbox layout */
+        .box-image {
+            display: flex;
+            justify-content: space-between; /* Space between the items */
+            align-items: flex-start; /* Align items to the start of the container */
+            gap: 20px; /* Add space between the items */
+        }
+
+        footer {
+            background-color: lightgreen;
+            color: black;
+            text-align: center;
+            width: 100%;
+            bottom: 0;
+        }
+
+
+    </style>
+</head>
+
+<body>
+<main class="contact-form">
+    <!-- Contact section -->
+    <section class="contact-text">
+        <h2 class="contact-us-heading"><u>Contact Us</u></h2>
+        <p style="font-size: medium; font-style: italic">We would love to hear from you! Please reach out to us through any of the following methods:</p>
+        <ul class="contact-us">
+            <li style="font-family: Calibri;"><b>Email: </b><a style="color: blue; font-family: Calibri;" href="mailto:saroja.hanchinaltutioncentre@gmail.com">saroja.hanchinaltutioncentre@gmail.com</a></li>
+            <li style="font-family: Calibri;"><b>Phone: </b><a style="color: blue; font-family: Calibri;" href="tel:+91 9871237645">+91 9871237645</a></li>
+            <li style="font-family: Calibri;"><b>Address:</b> Hanchinal Complex, Opp- Al-ameen, Vijayapur, Karnataka-IN, 586108</li>
+        </ul>
+        <div class="box-image">
+            <div class="box-text">
+                <!-- Form section -->
+                <form id="contact-form" th:action="@{/contact}" th:object="${contactMessage}" method="post">
+                    <h3 style="color:darkorange; text-align: center;">Get in Touch With Us</h3>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" th:field="*{fullname}" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" th:field="*{email}" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" th:field="*{message}" required></textarea>
+                    <label for="phone">Phone:</label>
+                    <textarea id="phone" name="phone" th:field="*{phone}" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+                <div th:if="${param.success}">
+                    <p>Thank you for contacting us. We will get back to you soon!</p>
+                </div>
+            </div>
+            <!-- Building Image -->
+            <img id="building-photo" th:src="@{/images/sarojabuildingphoto.png}"
+                 src="../static/images/sarojabuildingphoto.png" alt="Building Photo"/>
+        </div>
+    </section>
+</main>
+<!-- Location map -->
+<h5 style="text-align: center; color: darkorange; font-style: italic">Please Check Out Our Location: Saroja Tuition Centre</h5>
+<iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3818.896063998546!2d75.7127948741966!3d16.831511518582676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc655a005c9ced9%3A0xe1b094b64fc124ef!2sHanchinal%20lokal!5e0!3m2!1sen!2sus!4v1719122634266!5m2!1sen!2sus" style="border:0; width: 100%; height: 300px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<!-- Footer with contact information-->
+<footer>
+    <pre style="font-style: italic;">
+
+         &copy;2024 Saroja Tuition Centre.
+         Hanchinal Complex, Opp- Al-ameen, Vijayapur, Karnataka, 586108
+          Email : sarojatutioncentre@gmail.com
+
+         </pre>
+</footer>
+</body>
+
+</html>
+
+
+
+
+

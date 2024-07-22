@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+
+    <!-- Metadata about the document -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eligibility and Fee Calculation Form</title>
+
+    <!-- Link to external JavaScript file -->
+    <script th:src="@{/JS/myjavascript.js}" src="../static/JS/myjavascript.js"></script>
+
+    <!-- Internal CSS style/Code -->
+    <style>
+        /* General body styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: lightcyan;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* Heading styling */
+        h2 {
+            color: #4CAF50;
+            font-family: Bahnschrift,serif;
+        }
+
+        /* Form section styling */
+        .form-section {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Label styling */
+        label {
+            display: block;
+            font-family: Calibri;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        /* Input and select element styling */
+        input[type="text"], select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        /* Button styling */
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            font-family: Calibri;
+        }
+
+        /* Button hover effect */
+        button:hover {
+            background-color: #45a049;
+        }
+
+        /* Result box styling */
+        #eligibilityResult, #feeResult, #subjectsResult {
+            margin-top: 10px;
+            padding: 10px;
+            border-radius: 4px;
+            font-family: Calibri;
+            border: 1px solid black;
+        }
+
+        /* Specific styling for eligibility result box */
+        #eligibilityResult {
+            background-color: #e7f4e4;
+            border: 1px solid blue;
+        }
+
+        /* Specific styling for fee result box */
+        #feeResult {
+            background-color: #e4f0f4;
+            border: 1px solid blue;
+        }
+
+        /* Specific styling for subjects result box */
+        #subjectsResult {
+            background-color: #e4f0f4;
+            border: 1px solid blue;
+        }
+    </style>
+
+</head>
+
+<body>
+
+<!-- Eligibility Form Section -->
+<div class="form-section">
+    <h2>Eligibility Form</h2>
+    <label for="childAge">Enter Student Age:</label>
+    <input type="text" id="childAge" pattern="\d+" required>
+    <button id="checkEligibilityBtn">Check Eligibility</button>
+    <div id="eligibilityResult"></div>
+</div>
+
+<!-- Fee Calculation Form Section -->
+<div class="form-section">
+    <h2>Fee Calculation Form</h2>
+    <label for="classSelect">Select Class:</label>
+    <select id="classSelect"></select>
+    <br>
+    <label for="daysSelect">Days per Week:</label>
+    <select id="daysSelect">
+        <!-- Dropdown daysSelect Options-->
+        <option value="1">1 Day</option>
+        <option value="2">2 Days</option>
+        <option value="3">3 Days</option>
+        <option value="4">4 Days</option>
+        <option value="5">5 Days</option>
+        <option value="6">6 Days</option>
+        <option value="7">7 Days</option>
+    </select>
+    <br>
+    <button id="calculateFeeBtn">Calculate Fee</button>
+    <div id="feeResult"></div>
+</div>
+
+<!-- Explore Class Subjects Form -->
+<div class="form-section">
+    <h2>Explore Class Subjects</h2>
+    <label for="subjectClassSelect">Select Class:</label>
+    <select id="subjectClassSelect"></select>
+    <button id="showSubjectsBtn">Here are your Subjects</button>
+    <div id="subjectsResult"></div>
+</div>
+
+</body>
+</html>

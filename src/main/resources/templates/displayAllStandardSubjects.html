@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>All Standard Subjects</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #eaf0e0;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #d0e1d6;
+        }
+
+        th {
+            background-color: #4caf50;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tr:hover {
+            background-color: #d1e7d4;
+        }
+
+        a {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 20px;
+            text-decoration: none;
+            background-color: #4caf50;
+            color: white;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        a:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+<h1>All Standard Subjects</h1>
+<table>
+    <tr>
+        <th>Standard</th>
+        <th>Subjects</th>
+    </tr>
+    <!-- Iterate over standardSubjects list and display each information -->
+    <tr th:each="subject : ${standardSubjects}">
+        <td th:text="${subject.standard}">Standard</td>
+        <td th:text="${subject.subject}">Subjects</td>
+    </tr>
+</table>
+<a href="/standardSubject">Add More Standard Subjects</a>
+</body>
+</html>

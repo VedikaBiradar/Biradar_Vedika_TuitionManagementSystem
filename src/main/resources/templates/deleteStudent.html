@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Delete Student</title>
+    <link rel="stylesheet" th:href="@{/css/deleteStudent.css}" href="../static/css/deleteStudent.css" >
+</head>
+<body>
+<div class="container">
+
+    <!--    heading to delete student page-->
+    <h1>Delete Student Record</h1>
+
+    <!--    form to delete student -->
+    <form action="#" th:action="@{/deleteStudent}" method="post">
+        <label for="studentId">Student ID:</label>
+        <input type="number" id="studentId" name="studentId" required />
+        <button type="submit">Delete</button>
+    </form>
+    <div th:if="${successMessage}" class="success">
+        <p th:text="${successMessage}"></p>
+    </div>
+    <div th:if="${errorMessage}" class="error">
+        <p th:text="${errorMessage}"></p>
+    </div>
+</div>
+</body>
+</html>

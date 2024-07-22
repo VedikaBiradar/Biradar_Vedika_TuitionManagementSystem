@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <!-- Metadata about the document -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saroja Tuition Centre- About Us</title>
+
+
+
+    <link th:href="@{/css/mycss.css}"
+          href="../static/css/mycss.css" rel="stylesheet"/>
+
+</head>
+<body class="about-body">
+<main>
+    <section>
+        <!-- About Us Heading -->
+        <h2 style="font-family: 'Palatino Linotype'; font-size: 30px;" id="about-heading"><u>Saroja Tuition Centre</u></h2>
+
+        <!-- List of key phrases -->
+        <ul class="some-sent">
+            <li>Building Students</li>
+            <li>Building Skills</li>
+            <li>Building Dreams</li>
+        </ul>
+
+        <!-- Images related to the tuition centre -->
+        <div class="about-images">
+
+            <img th:src="@{/images/sarojaimagesix.jpg}"
+                 src="../static/images/sarojaimagesix.jpg" alt="image" class="about-img"/>
+            <img th:src="@{/images/sarojaimagetwo.png}"
+                 src="../static/images/sarojaimagetwo.png" alt="image" class="about-img"/>
+            <img th:src="@{/images/sarojaimagethree.png}"
+                 src="../static/images/sarojaimagethree.png" alt="image" class="about-img"/>
+        </div>
+
+        <!-- Mission Statement -->
+        <p class="about-para">" At Saroja Tuition Centre, our mission is to empower students with the knowledge,
+            skills, and confidence they need to excel academically and grow personally. We are
+            committed to delivering high-quality, personalized education that recognizes and
+            nurtures each student's unique potential. Through innovative teaching methods,
+            a supportive learning environment, and a dedication to continuous improvement, we
+            inspire a lifelong love of learning. Our goal is to foster a community of curious,
+            resilient learners who are prepared to succeed
+            in their educational pursuits and contribute positively to the world."</p>
+
+        <!-- Core Values Heading -->
+        <h2 class="about-heading">Our Core Values</h2>
+
+        <!-- List of Core Values -->
+        <div class="values">
+            <ul>
+                <li><strong>Excellence</strong>: We are committed to achieving the highest standards in education, helping each student reach their maximum academic potential through rigorous and high-quality teaching.</li>
+                <li><strong>Personalization</strong>: We recognize and cater to the individual needs and learning styles of our students, providing tailored instruction to ensure effective learning for everyone.</li>
+                <li><strong>Integrity</strong>: We conduct all our activities with honesty, transparency, and ethical behavior, fostering trust and respect within our community.</li>
+                <li><strong>Support</strong>: We create a nurturing environment where students feel safe to explore, ask questions, and grow, providing the necessary support to help them overcome challenges and succeed.</li>
+                <li><strong>Innovation</strong>: We continuously incorporate innovative teaching methods and technologies to enhance the learning experience, preparing our students for the dynamic world ahead.</li>
+            </ul>
+        </div>
+
+        <!-- Basic Fee Structure Heading -->
+        <h2 class="about-heading">Basic Fee Structure: Please reach out to us for better information</h2>
+
+        <!-- Fee Structure Table -->
+        <table class="table-content">
+            <tr>
+                <th>Class</th>
+                <th>Subjects</th>
+                <th>Fee</th>
+            </tr>
+            <tr>
+                <td>First Class</td>
+                <td>English, Kannada, Maths</td>
+                <td>30000 Rs</td>
+            </tr>
+            <tr>
+                <td>Second Class</td>
+                <td>English, Kannada, Maths</td>
+                <td>40000 Rs</td>
+            </tr>
+            <tr>
+                <td>Third Class</td>
+                <td>English, Kannada, Maths, Science</td>
+                <td>50000 Rs</td>
+            </tr>
+            <tr>
+                <td>Fourth Class</td>
+                <td>English, Kannada, Maths, Science, History</td>
+                <td>60000 Rs</td>
+            </tr>
+        </table>
+
+        <!-- Final Paragraphs about the Centre -->
+        <div class="about-para-last">
+            <p>At Saroja Tuition Centre, we are dedicated to nurturing each student's academic
+                and personal growth. Through our commitment to excellence, personalization, integrity,
+                support, and innovation, we strive to create a positive and effective learning
+                environment.</p>
+            <p>Join us at Saroja Tuition Centre, where your educational
+                journey is our top priority, and together, we will achieve greatness.</p>
+        </div>
+    </section>
+</main>
+
+<!-- Footer Section -->
+<footer>
+    <!-- using pre here to accept spaces and all -->
+    <pre style="font-style: italic;">&copy;2024 Saroja Tuition Centre.
+         Hanchinal Complex, Opp- Al-ameen, Vijayapur, Karanatka, 586108
+         <a href="mailto:saroja.hanchinaltutioncentre@gmail.com">saroja.hanchinaltutioncentre@gmail.com</a>
+    </pre>
+</footer>
+</body>
+</html>

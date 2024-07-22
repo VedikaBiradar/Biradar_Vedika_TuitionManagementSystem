@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+.navbar {
+    background-color: green;
+    padding: 10px;
+    color: #fff;
+    justify-content: center;
+    display: flex;
+    font-size: larger;
+}
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+}
+.container {
+    padding: 20px;
+}
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+}
+.button {
+    background-color: #28a745; /* Green color */
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+a{
+    color: blue;
+}
+

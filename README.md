@@ -50,5 +50,4 @@ Security Configuration: Customizes Spring Security settings to define user roles
 Dynamic Content: Uses Thymeleaf to dynamically generate HTML content based on user interactions and data from the back-end.
 
 
-I have deployed my project through girhub here is the link to access-
-https://vedikabiradar.github.io/Biradar_Vedika_TuitionManagementSystem/src/main/resources/templates/index.html
+

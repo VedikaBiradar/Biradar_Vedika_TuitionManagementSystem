@@ -54,3 +54,42 @@ This web application is designed to manage tuition services with a focus on prov
 
 ```bash
 git clone https://github.com/VedikaBiradar/Biradar_Vedika_TuitionManagementSystem.git
+
+
+---
+
+## 🧪 Usage
+
+- **Parent Registration**: Register to access the parent dashboard and manage your student information.
+- **Admin Registration**: Register as an admin to manage tuition, subjects, fees, and view all student data.
+- **Student Enrollment**: Enroll students and help them get the best educational support.
+
+---
+
+## 🤝 Contributing
+
+We welcome contributions!  
+To contribute:
+
+1. **Fork** the repository  
+2. **Create** a feature branch  
+3. **Commit** your changes  
+4. **Open** a pull request
+
+Please ensure your code aligns with the project's goals and adheres to best practices.
+
+---
+
+## 📄 License
+
+This project is **not licensed** at the moment.
+
+---
+
+## 📬 Contact
+
+- 📧 **Email**: [vedikabiradar2001@gmail.com](mailto:vedikabiradar2001@gmail.com)
+- 🌐 **Website**: [Visit Project Page](https://samundeeswari18.github.io/Samundeeswari_Velusamy_PeacockNest_DayCare/src/main/resources/templates/index.html)
+
+
+#THANK YOU

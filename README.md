@@ -84,6 +84,6 @@ This project is **not licensed** at the moment.
 
 ---
 # URL for website
-(https://samundeeswari18.github.io/Samundeeswari_Velusamy_PeacockNest_DayCare/src/main/resources/templates/index.html)
+
 
 ---

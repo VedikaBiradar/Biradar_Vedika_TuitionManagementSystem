@@ -1,4 +1,4 @@
-                                      Tuition Management System
+                                      ####Tuition Management System ####
 The goal of this project is to develop a comprehensive tuition management system tailored for educational institutions.
 This system is designed to enhance the efficiency of administrative tasks, streamline the management of student and parent data, track fees, and 
 facilitate seamless communication between students, parents, and staff or teachers. Additionally, it will provide tools for monitoring student progress and educational activities.

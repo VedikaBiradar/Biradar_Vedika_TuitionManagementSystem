@@ -45,20 +45,11 @@ This web application is designed to manage tuition services with a focus on prov
 - Maven
 - A compatible IDE (e.g., IntelliJ IDEA, Eclipse)
 - MySQL 8
+- SpringBoot
 
 ---
 
-## 🛠️ Installation
-
-1. Clone the repository:
-
-```bash
-git clone https://github.com/VedikaBiradar/Biradar_Vedika_TuitionManagementSystem.git
-
-
----
-
-## 🧪 Usage
+## usage
 
 - **Parent Registration**: Register to access the parent dashboard and manage your student information.
 - **Admin Registration**: Register as an admin to manage tuition, subjects, fees, and view all student data.
@@ -80,16 +71,19 @@ Please ensure your code aligns with the project's goals and adheres to best prac
 
 ---
 
-## 📄 License
+# 📄 License
 
 This project is **not licensed** at the moment.
 
 ---
 
+
+
 ## 📬 Contact
-
 - 📧 **Email**: [vedikabiradar2001@gmail.com](mailto:vedikabiradar2001@gmail.com)
-- 🌐 **Website**: [Visit Project Page](https://samundeeswari18.github.io/Samundeeswari_Velusamy_PeacockNest_DayCare/src/main/resources/templates/index.html)
 
+---
+# URL for website
+(https://samundeeswari18.github.io/Samundeeswari_Velusamy_PeacockNest_DayCare/src/main/resources/templates/index.html)
 
-#THANK YOU
+---

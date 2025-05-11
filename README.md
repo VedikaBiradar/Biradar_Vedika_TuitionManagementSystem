@@ -5,6 +5,13 @@ This web application is designed to manage tuition services with a focus on prov
 
 ---
 
+# URL for website
+
+https://vedikabiradar.github.io/SBA_HTML_CSS_JS/src/main/resources/templates/index.html
+
+
+---
+
 ## 🌟 Features
 
 ### 👤 User Management
@@ -83,7 +90,4 @@ This project is **not licensed** at the moment.
 - 📧 **Email**: [vedikabiradar2001@gmail.com](mailto:vedikabiradar2001@gmail.com)
 
 ---
-# URL for website
 
-
----

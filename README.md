@@ -1,4 +1,4 @@
-# 🎓 Saroja Tuition Centre
+# 🎓 Saroja Tuition Academy 
 
 Welcome to the **Saroja Tuition Centre** project!  
 This web application is designed to manage tuition services with a focus on providing a user-friendly experience for **parents**, **students**, and **staff**. Built using **Spring Boot** and **Thymeleaf**, it offers tools for tracking student progress, managing enrollments, and supporting day-to-day tuition center operations. 
